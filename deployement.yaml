@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wil-playground-deployment
+  labels:
+      name: wil-playground
+spec:
+  # replicas: 2  # Number of replicas
+  selector:
+    matchLabels:
+      app: wil-playground
+  template:
+    metadata:
+      labels:
+        app: wil-playground
+    spec:
+      containers:
+      - name: wil-app
+        image: wil42/playground:v1  # Using version 1 of the image
+        ports:
+        - containerPort: 8888  #container listens on port 8888

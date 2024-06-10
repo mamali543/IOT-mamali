@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: wil-playground-service
+  labels:
+    app: wil-playground
+spec:
+  type: NodePort
+  ports:
+  - port: 8888  # Port accessible inside the cluster
+    targetPort: 8888  # Container port to send requests to
+    nodePort: 30080  # Port accessible externally
+    protocol: TCP
+  selector:
+    app: wil-playground
