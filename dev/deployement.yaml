@@ -3,7 +3,7 @@ apiVersion: apps/v1 # Specifies the version of the Kubernetes API you're using t
 kind: Deployment  #The type of Kubernetes resource you want to create. In this case, Deployment manages a set of replica Pods
 
 metadata: #Metadata about the resource, like its name and labels, which are key-value pairs used for organizing and selecting subsets of objects
-  name: wil-playground-deployment
+  name: wil-deployment
   labels:
       name: wil-playground
 
