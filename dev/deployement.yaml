@@ -8,7 +8,7 @@ metadata: #Metadata about the resource, like its name and labels, which are key-
       name: wil-playground
 
 spec:
-  # replicas: 2  # Number of replicas
+  replicas: 2  # Number of replicas
   selector:
     matchLabels: #Defines how the Deployment finds which Pods to manage. It uses a label selector to find those Pods that match its labels
       app: wil-playground
