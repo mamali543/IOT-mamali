@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
       - name: wil-app
-        image: wil42/playground:v1  # Using version 1 or 2 of the image
+        image: wil42/playground:v2  # Using version 1 or 2 of the image
         ports: #List of ports to expose from the container
         - containerPort: 8888  #the port the container is configured to listen to.
